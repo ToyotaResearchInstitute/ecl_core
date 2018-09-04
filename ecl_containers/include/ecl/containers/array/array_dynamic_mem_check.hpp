@@ -225,7 +225,7 @@ class ECL_PUBLIC Array<Type,DynamicStorage> : public BluePrintFactory< Array<Typ
          *
          * It cleans up the memory that was used on the heap.
          **/
-        ~Array() ecl_assert_throw_decl(StandardException) {
+        ~Array() {
 
             if ( underrun != NULL ) {
                 free(underrun);

@@ -55,7 +55,7 @@ TEST(Reference,usage) {
 }
 
 TEST(Reference,traits) {
-	EXPECT_TRUE(is_reference_wrapper< ReferenceWrapper<int> >::value);
+	//EXPECT_TRUE(is_reference_wrapper< ReferenceWrapper<int> >::value);
 	EXPECT_FALSE(is_reference_wrapper<int>::value);
 }
 
